@@ -1,12 +1,16 @@
 #include <stdio.h>
 int main ()
 {
-	int x;
-	x = 1;
+	int x=0,x1=0;
+
 loop: if(x<6)
       {
-	      printf("%d\n",x);
+	      x1=x+x1;
 	      x++;
+
 	      goto loop;
       }
+      printf("%d",x1);
 }
+
+
