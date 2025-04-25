@@ -5,7 +5,6 @@ void main ()
 	int x,n,input,result=0,output;
 	printf("Enter a number as input : ");
 	scanf("%d",&input);
-	printf("%d\n",input);
 	for(int x=input;x>0;x=x/10)
 	{	
 
