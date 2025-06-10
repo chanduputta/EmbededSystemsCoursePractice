@@ -10,20 +10,23 @@ int main()
 
 void disp_single_digit_square(int x)
 {
-	printf("Total number of single digit perfect squares in given number: ");
-	int counter1 =0;
+	printf("Single digit perfect squares in given number %d are: ",x);
+	int counter1=0;
 	for(;x>0;x=x/10)
 	{
 		int x1 = x%10;
-	if(x1%2 != 0)
+	
+	for(int i=0;i<x1;i++)
 	{
-		counter1++;
-		//printf("No %d is odd",x1);
+		if(i*i == x1)
+		{		counter1++;
+				printf("%d ",x1);
+		}
+		else
+		{	
+			//printf("No %d is not perfect square yet",x1);
+		}
 	}
-	else
-	{	
-		//printf("Yes %d is even",x1);
 	}
-	}
-	printf("%d\n",counter1);
+	printf("\nTotal: %d\n",counter1);
 }
